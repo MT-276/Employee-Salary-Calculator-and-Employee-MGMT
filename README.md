@@ -1,48 +1,55 @@
-# Employee Database Ver 1.0
+# Employee Database Ver 2.0
 
-## Introduction
-Welcome to the Employee Database Ver 1.0, a simple Python program designed for managing employee data in a database. This program allows you to perform various operations, such as uploading data for a new employee, checking the data of an existing employee, and removing data of an employee.
+## Overview
+
+Employee Database Ver 2.0 is a Python-based command-line application for managing employee data. This application offers two main functionalities:
+
+1. Employee Login: Employees can log in to the system to perform operations related to their salary and personal information.
+
+2. Admin/HRA Login: Admins or HRAs can log in to perform administrative tasks such as adding, updating, or deleting employee records.
 
 ## Features
-- **Upload Data of a New Employee**: You can input details for a new employee, such as name, phone number, age, department, and salary, and the program will save this information to the database. It will also automatically generate a unique Employee ID for the new entry.
 
-- **Check Data of an Employee**: If you want to retrieve information about a specific employee, you can input their Employee ID, and the program will display their details, including name, phone number, age, department, and salary.
+- Employee Login:
+  - Calculate Gross Salary
+  - Calculate Net Salary
+  - Calculate HRA (House Rent Allowance)
+  - Calculate DA (Daily Allowance)
 
-- **Remove Data of an Employee**: To delete an employee's data from the database, you can provide their Employee ID, and the program will remove their information from the database.
+- Admin/HRA Login:
+  - Upload data of a new employee
+  - Check data of an employee
+  - Remove data of an employee
+  - Update employee details
 
 ## Getting Started
-To use this program, please follow these steps:
 
-1. Clone or download the repository to your local machine.
+1. Clone the repository to your local machine:
 
-2. Ensure you have Python installed, as this program is written in Python.
+   ```bash
+   git clone https://github.com/msproductions/employee-database.git
+   ```
 
-3. Run the program by executing the "Employee-Salary-Calculator-and-Employee-MGMT" file.
+2. Run the application:
 
-4. Follow the on-screen prompts and select the desired option (1 for uploading data, 2 for checking data, 3 for removing data).
+   ```bash
+   python Employee-Salary-Calculator-and-Employee-MGMT.py
+   ```
 
-5. For each option, follow the specific instructions provided by the program.
+## Usage
 
-6. The program will interact with the database ("EmployeeDB.db") to manage employee data.
+- When the application is launched, you will be prompted to choose between Employee Login and Admin/HRA Login. Follow the prompts to perform the desired actions.
 
-## Database Structure
-The program uses an SQLite database with the following structure:
-- `Emp_ID` (Employee ID): A unique identifier for each employee.
-- `Emp_Name` (Employee Name): The name of the employee.
-- `Emp_Phone` (Employee Phone): The phone number of the employee.
-- `Emp_Age` (Employee Age): The age of the employee.
-- `Emp_Dept` (Employee Department): The department to which the employee belongs.
-- `Emp_Salary` (Employee Salary): The salary of the employee.
+## Database
 
-## Dependencies
-The program uses Python's built-in libraries and does not require any external dependencies.
+- The application uses an SQLite database (`EmployeeDB.db`) to store employee data.
 
-## Contributors
+- Employee data is organized in a table named `Empl`, which includes columns for Employee ID, Password, Name, Phone, Age, Department, and Salary.
+
+## Developer
+
 - Lead Developer: Meit Sant
-- Organization: MS Productions
 
+## About
 
-## Version History
-- Version 1.0 (13th October 2023): Initial release.
-
-Thank you for using the Employee Database Ver 1.0. We hope it helps you efficiently manage employee data.
+This application was developed by Meit Sant and is maintained by MS Productions.
