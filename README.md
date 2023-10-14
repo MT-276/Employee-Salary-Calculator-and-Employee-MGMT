@@ -8,6 +8,12 @@ Employee Database Ver 2.0 is a Python-based command-line application for managin
 
 2. Admin/HRA Login: Admins or HRAs can log in to perform administrative tasks such as adding, updating, or deleting employee records.
 
+```
+Please note that the admin username and password is hardcoded. Please change as per your liking
+Admin Username : Admin123
+Admin Password : Pwd1212
+```
+
 ## Features
 
 - Employee Login:
